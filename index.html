@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" /><!--Karakter kodlaması UTF-8 olarak kullanıldı.-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /> <!-- Sayfanın mobil cihazlarda uygun şekilde görüntülenmesini sağlayacak viewport ayarları -->
+    <title>Kırmızı Başlıklı Kız Oyunu</title>
+    <style>
+      #gameCanvas {
+        position: absolute;/* Canvas'ı sayfanın ortasına konumlandırmak için pozisyonlandırma */
+        left: 50%;/* Sol kenardan %50 uzaklık */
+        top: 50%;/* Üst kenardan %50 uzaklık */
+        transform: translate(-50%, -50%);/* Canvas'ı tam ortaya almak için geri çevirme */
+        z-index: 1;/* Çakışma durumlarında canvas'ın üstte olmasını sağlar */
+        background-image: url("yol.jpg"); /* Resmi canvas arka planı olarak ayarlar */
+        background-size: cover; /* Resmi canvas boyutlarına sığdırır */
+      }
+    </style>
+  </head>
+  <body>
+    <canvas id="gameCanvas" width="800" height="400"></canvas>
+     <!-- Oyunun çizileceği canvas elementi, id ile tanımlandı ve boyutları verildi. -->
+    <script src="script4.js"></script> <!-- Oyun mantığını içeren JavaScript dosyası -->
+  </body>
+</html>
